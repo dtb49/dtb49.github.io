@@ -13,7 +13,7 @@
       <link>https://dtb49.github.io/posts/my-first-blog/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://dtb49.github.io/posts/my-first-blog/</guid>
-      <description>&lt;p&gt;This is a test to see if my pipeline is working correctly!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve inserted this image below to ensure my images are also working too!&lt;/p&gt;&#xA;&lt;p&gt;!&lt;img src=&#34;https://dtb49.github.io/images/coding-splash.jpg&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is a test to see if my pipeline is working correctly!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve inserted this image below to ensure my images are also working too!&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;coding-splash.jpg&#34; alt=&#34;Test Image&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
