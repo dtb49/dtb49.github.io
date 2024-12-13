@@ -6,8 +6,15 @@
     <description>Recent content on Thesarium</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://dtb49.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unreal Engine Status Branches</title>
+      <link>https://dtb49.github.io/posts/unreal-engine-status-branches/</link>
+      <pubDate>Fri, 13 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://dtb49.github.io/posts/unreal-engine-status-branches/</guid>
+      <description>&lt;p&gt;Learn how to implement Status Branches in Unreal Engine to streamline multi-branch workflows, prevent versioning conflicts, and maintain file integrity across teams. This guide covers setup with practical examples and troubleshooting tips.&lt;/p&gt;&#xA;&lt;p&gt;Unreal Engine introduced Status Branches in version 4.20, but this feature remains underutilized and less documented. I discovered its potential through the Unreal Fest talk &lt;a href=&#34;https://www.youtube.com/watch?v=p4RcDpGQ_tI&amp;amp;t=1722s&#34;&gt;Workflow on Fortnite&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;why-use-status-branches&#34;&gt;Why Use Status Branches?&lt;/h3&gt;&#xA;&lt;p&gt;Status Branches help prevent versioning issues in multi-branch projects by ensuring users cannot lock or modify files that are outdated compared to the server&amp;rsquo;s latest changes. This feature is especially useful for teams working across multiple branches, reducing conflicts and maintaining the integrity of shared files.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>My first blog!</title>
       <link>https://dtb49.github.io/posts/my-first-blog/</link>

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Unreal Engine Status Branches // Thesarium</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.139.3">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Dylan Barrett" />
+    <meta name="description" content="Learn how to implement Status Branches in Unreal Engine to streamline multi-branch workflows, prevent versioning conflicts, and maintain file integrity across teams. This guide covers setup with practical examples and troubleshooting tips." />
+    <link rel="stylesheet" href="/css/main.min.5b1fcc8902588589c4767187402a3c29f8b8d7a6fdef6d9f8f77045bb0d14fee.css" />
+    
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Unreal Engine Status Branches">
+  <meta name="twitter:description" content="Learn how to implement Status Branches in Unreal Engine to streamline multi-branch workflows, prevent versioning conflicts, and maintain file integrity across teams. This guide covers setup with practical examples and troubleshooting tips.">
+
+    <meta property="og:url" content="https://dtb49.github.io/posts/unreal-engine-status-branches/">
+  <meta property="og:site_name" content="Thesarium">
+  <meta property="og:title" content="Unreal Engine Status Branches">
+  <meta property="og:description" content="Learn how to implement Status Branches in Unreal Engine to streamline multi-branch workflows, prevent versioning conflicts, and maintain file integrity across teams. This guide covers setup with practical examples and troubleshooting tips.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-13T00:00:00+00:00">
+    <meta property="article:tag" content="Unreal-Engine">
+    <meta property="article:tag" content="#Source-Control">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://dtb49.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="Dylan Barrett" /></a>
+      <span class="app-header-title">Thesarium</span>
+      <p>This is a blogging and tutorial website to learn about Unreal Engine. I try to cover advanced or hidden features that aren&#39;t documented very well.</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/dtb49" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-github" viewBox="0 0 24 24" fill="currentColor"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Unreal Engine Status Branches</h1>
+      <div class="post-meta">
+        <div>
+          <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Dec 13, 2024
+        </div>
+        <div>
+          <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          3 min read
+        </div>
+        <div>
+          <svg class="icon icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+              <a class="tag" href="https://dtb49.github.io/tags/unreal-engine/">Unreal-Engine</a>
+              <a class="tag" href="https://dtb49.github.io/tags/%23source-control/">#Source-Control</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>Learn how to implement Status Branches in Unreal Engine to streamline multi-branch workflows, prevent versioning conflicts, and maintain file integrity across teams. This guide covers setup with practical examples and troubleshooting tips.</p>
+<p>Unreal Engine introduced Status Branches in version 4.20, but this feature remains underutilized and less documented. I discovered its potential through the Unreal Fest talk <a href="https://www.youtube.com/watch?v=p4RcDpGQ_tI&amp;t=1722s">Workflow on Fortnite</a>.</p>
+<h3 id="why-use-status-branches">Why Use Status Branches?</h3>
+<p>Status Branches help prevent versioning issues in multi-branch projects by ensuring users cannot lock or modify files that are outdated compared to the server&rsquo;s latest changes. This feature is especially useful for teams working across multiple branches, reducing conflicts and maintaining the integrity of shared files.</p>
+<h3 id="conceptual-overview">Conceptual Overview</h3>
+<p>When Status Branches are set up, any branch listed in the status branch list will enforce restrictions on file checkouts. If a user&rsquo;s local workspace contains outdated files compared to the server&rsquo;s version in the listed branches, they will be unable to checkout those files. This ensures that changes made in higher-priority branches are preserved and conflicts are minimized.</p>
+<p><img src="/images/status-branch-icon.png" alt="Image Description"></p>
+<h3 id="setup-guide">Setup Guide</h3>
+<p>You can enable Status Branches with both Git and Perforce. The setup process is straightforward and nearly identical for both providers.</p>
+<h4 id="step-1-create-a-custom-uunrealedengine-subclass">Step 1: Create a Custom <code>UUnrealEdEngine</code> Subclass</h4>
+<ol>
+<li>Add an <code>UUnrealEdEngine</code> subclass to an editor-only code module. While it’s possible to place it in a non-editor module, doing so requires guarding it with <code>WITH_EDITOR</code> macros to avoid runtime issues.</li>
+</ol>
+<h4 id="step-2-override-the-init-function">Step 2: Override the <code>Init</code> Function</h4>
+<p>Override the <code>Init</code> function in your subclass and add the following code:</p>
+<pre tabindex="0"><code>#include &#34;ISourceControlModule.h&#34;
+#include &#34;ISourceControlProvider.h&#34;
+
+void UMyEdEngine::Init(IEngineLoop* InEngineLoop)
+{
+    Super::Init(InEngineLoop);
+
+    // Register state branches
+    const ISourceControlModule&amp; SourceControlModule = ISourceControlModule::Get();
+    {
+        ISourceControlProvider&amp; SourceControlProvider = SourceControlModule.GetProvider();
+
+        // Order matters: Higher branches are stabler and manually promoted upwards.
+        const TArray&lt;FString&gt; Branches = {&#34;//ProjectDepot/development&#34;, &#34;//ProjectDepot/main&#34;};
+        SourceControlProvider.RegisterStateBranches(Branches, TEXT(&#34;Content&#34;));
+    }
+}
+</code></pre><p><strong>Notes:</strong></p>
+<ul>
+<li>
+<p>For Git, replace <code>//ProjectDepot/main</code> with the equivalent Git branch name, e.g., <code>origin/main</code>.</p>
+</li>
+<li>
+<p>The second argument in <code>RegisterStateBranches</code> specifies the relative content path, which is typically <code>Content</code>.</p>
+</li>
+</ul>
+<h4 id="step-3-update-defaultengineini">Step 3: Update <code>DefaultEngine.ini</code></h4>
+<p>Edit the <code>DefaultEngine.ini</code> file in your project&rsquo;s <code>Config</code> folder to ensure the engine recognizes your custom <code>UUnrealEdEngine</code> class:</p>
+<pre tabindex="0"><code>[/Script/Engine.Engine]
+UnrealEdEngine=/Script/MyModule.MyUnrealEdEngine
+</code></pre><p>When referencing classes in configuration files, omit the <code>U</code> prefix. For example, <code>UMyUnrealEdEngine</code> should be written as <code>MyUnrealEdEngine</code>.</p>
+<h4 id="step-4-understand-branch-hierarchy">Step 4: Understand Branch Hierarchy</h4>
+<p>In the example above, <code>//ProjectDepot/main</code> is the highest-tested stream. Changes in higher-priority branches, like <code>main</code>, take precedence and propagate downward to lower branches, such as <code>development</code>. Ensure your branch hierarchy aligns with your team&rsquo;s workflow.</p>
+<h4 id="step-5-adjust-module-loading-phase">Step 5: Adjust Module Loading Phase</h4>
+<p>If you implement this class in an editor-only module, set its loading phase to <code>Default</code> in your <code>.uproject</code> file to avoid loading issues:</p>
+<pre tabindex="0"><code>{
+    &#34;Name&#34;: &#34;MyEditorModule&#34;,
+    &#34;Type&#34;: &#34;Editor&#34;,
+    &#34;LoadingPhase&#34;: &#34;Default&#34;
+}
+</code></pre><h3 id="debugging-and-troubleshooting">Debugging and Troubleshooting</h3>
+<ul>
+<li>
+<p><strong>Issue:</strong> The editor fails to recognize the custom <code>UUnrealEdEngine</code> class.</p>
+<ul>
+<li><strong>Solution:</strong> Double-check the <code>DefaultEngine.ini</code> configuration and ensure the module&rsquo;s loading phase is set correctly.</li>
+</ul>
+</li>
+<li>
+<p><strong>Issue:</strong> Branch hierarchy behaves unexpectedly.</p>
+<ul>
+<li><strong>Solution:</strong> Verify the order of branches in the <code>RegisterStateBranches</code> call. Higher-priority branches should be listed last.</li>
+</ul>
+</li>
+</ul>
+<h3 id="conclusion">Conclusion</h3>
+<p>Status Branches are a powerful yet underutilized feature in Unreal Engine that can significantly enhance your team&rsquo;s workflow by reducing conflicts and preserving file integrity. By following this setup guide, you can ensure seamless integration of Status Branches into your project.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
