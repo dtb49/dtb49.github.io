@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>#Git-Fork on Thesarium</title>
+    <link>https://dtb49.github.io/tags/%23git-fork/</link>
+    <description>Recent content in #Git-Fork on Thesarium</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://dtb49.github.io/tags/%23git-fork/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Customizing Fork for Unreal Engine</title>
+      <link>https://dtb49.github.io/posts/customizing-fork-for-unreal-engine/</link>
+      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://dtb49.github.io/posts/customizing-fork-for-unreal-engine/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s learn how to better integrate and customize Git Fork for use with Unreal Engine. I love Git Fork. It is my Git GUI of choice. What I really love is its ability to integrate with 3rd party diff tools like Unreal Engine&amp;rsquo;s Blueprint Diff Tool. This guide will walk you through setting up Git Fork to utilize the Unreal Engine Diff Tool so that you can speed up your Review process when it comes to diffing Blueprints.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
